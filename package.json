@@ -1,0 +1,22 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "description": "Conversión de modenas",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/alejandrette/Currency-converter"
+  },
+  "keywords": [
+    "converter"
+  ],
+  "author": "alejandrette",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
