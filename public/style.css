@@ -1,0 +1,28 @@
+body {
+  background-color: #002D6D; /* Fondo azul oscuro */
+  color: white;
+}
+.conversion-container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+.btn-convertir {
+  background-color: #007BFF; /* Azul para el botón */
+  color: white;
+}
+.currency-select {
+  display: flex;
+  align-items: center;
+}
+.currency-flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
