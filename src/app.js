@@ -1,16 +1,17 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
+
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = 3000;
 
-// Middleware para servir archivos estáticos
-app.use(express.static(path.join(__dirname, '../public')));
+// Configura la carpeta 'public' para servir archivos estáticos
+app.use(express.static('public'));
 
-// Importar rutas
-const indexRouter = require('./routes/index');
-app.use('/', indexRouter);
+// Sirve la página principal (index.html) cuando accedas a la raíz del sitio
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve('public', 'index.html'));
+});
 
-// Escuchar en el puerto
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
