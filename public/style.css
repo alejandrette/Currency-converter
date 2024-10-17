@@ -28,3 +28,7 @@ img{
 .btn{
   max-height: 40px;
 }
+
+.container-chart{
+  max-width: 500px;
+}
